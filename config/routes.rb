@@ -35,6 +35,7 @@ Rails.application.routes.draw do
   get("/cancel_user_account", { :controller => "user_authentication", :action => "destroy" })
 
   # ------------------------------
+  get("/", { :controller => "user_authentication", :action => "homepage" })
 
   # SIGN IN FORM
   get("/user_sign_in", { :controller => "user_authentication", :action => "sign_in_form" })
